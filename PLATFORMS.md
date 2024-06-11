@@ -8,7 +8,6 @@
 - Cisco IOS-XR
 - Cisco NX-OS
 - Cisco SG300
-- HP ProCurve
 - Juniper Junos
 - Linux
 
@@ -20,6 +19,7 @@
 - Alcatel AOS6/AOS8
 - Apresia Systems AEOS
 - ARRIS CER
+- Aruba OS Switch
 - AudioCodes Gateways & Controllers
 - Broadcom ICOS
 - Calix B6
@@ -42,11 +42,13 @@
 - Fiberstore FSOS
 - Hillstone StoneOS
 - HPE Comware7
+- HPE ProCurve
 - Huawei
 - Huawei OLT
 - Huawei SmartAX
 - IP Infusion OcNOS
 - Juniper ScreenOS
+- Maipu
 - MikroTik RouterOS
 - MikroTik SwitchOS
 - NetApp cDOT
@@ -72,7 +74,8 @@
 - A10
 - Accedian
 - Allied Telesis AlliedWare Plus
-- Aruba
+- Aruba OS (Wireless Controllers/WAPs)
+- Aruba AOS-CX
 - Brocade Fabric OS
 - C-DOT CROS
 - Ciena SAOS
@@ -83,6 +86,7 @@
 - Coriant
 - Dell OS6
 - Dell EMC Isilon
+- Digi TransPort Routers
 - Eltex
 - Enterasys
 - Endace
@@ -162,6 +166,7 @@
 - dell_powerconnect
 - dell_sonic
 - dlink_ds
+- digi_transport
 - eltex
 - eltex_esr
 - endace

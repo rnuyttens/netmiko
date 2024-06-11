@@ -14,7 +14,7 @@ class CiscoFtdSSH(NoEnable, NoConfig, CiscoSSHConnection):
         # Make sure the ASA is ready
         command = "show curpriv\n"
         self.write_channel(command)
-        self.read_until_pattern(pattern=re.escape(command.strip()))
+        #self.read_until_pattern(pattern=re.escape(command.strip()))
 
         # The 'enable' call requires the base_prompt to be set.
         self.set_base_prompt()

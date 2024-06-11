@@ -10,7 +10,12 @@ class CiscoFtdSSH(NoEnable, NoConfig, CiscoSSHConnection):
 
     def session_preparation(self) -> None:
         """Prepare the session after the connection has been established."""
-        self._test_channel_read(pattern=r"[>#]")
+        # Make sure the ASA is ready
+        command = "show curpriv\n"
+        self.write_channel(command)
+        self.read_until_pattern(pattern=re.escape(command.strip()))
+
+        # The 'enable' call requires the base_prompt to be set.
         self.set_base_prompt()
 
     def send_config_set(self, *args: Any, **kwargs: Any) -> str:
